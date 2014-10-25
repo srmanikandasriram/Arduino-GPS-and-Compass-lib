@@ -1,12 +1,11 @@
-#include <RR_GPS.h>
+#include <GPS.h>
 
-RR_GPS gps;
+GPS gps;
 
 void setup() {
   Serial.begin(9600);
   Serial.println(gps.toRad(3347.4843));
   gps.Enable();
-
 }
 
 void loop() {
